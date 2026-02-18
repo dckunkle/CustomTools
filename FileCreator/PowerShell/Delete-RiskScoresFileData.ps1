@@ -52,7 +52,7 @@
 
 
     EXAMPLE
-    .\Delete-RiskScoresFileData.ps1 -Server "aldqadbqr06" -Filename "FC_RiskScores_20230414.txt" -ClientKey "10606" -Database "mdsd-auto-001" -UserId "md_readwrite_user" -Password "QcjoFfdtimmKHP4by4HQ" -LogId "0" 
+    .\Delete-RiskScoresFileData.ps1 -Server "aldqadbqr06" -Filename "FC_RiskScores_20230414.txt" -ClientKey "10606" -Database "mdsd-auto-001" -UserId "md_readwrite_user" -Password "password" -LogId "0" 
 
 
 #>
@@ -85,9 +85,9 @@ Param(
 )
 
 #memberdomain-database-conn-str
-#$ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=mdsd-qa-001;Persist Security Info=False;User ID=md_readwrite_user;Password=HZB4XYxgBVPAxXoc5N6o;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
-#$ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=mdsd-auto-001;Persist Security Info=False;User ID=md_readwrite_user;Password=QcjoFfdtimmKHP4by4HQ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
-#$ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=mdsd-reg-001;Persist Security Info=False;User ID=md_readwrite_user;Password=rguvlGlfHnFbwbWYTbh1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+#$ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=mdsd-qa-001;Persist Security Info=False;User ID=user;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+#$ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=mdsd-auto-001;Persist Security Info=False;User ID=user;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+#$ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=mdsd-reg-001;Persist Security Info=False;User ID=user;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 
 
 $ConnectionString = "Server=tcp:ipe1qa-hpss-001.database.windows.net,1433;Initial Catalog=" + $Database + ";Persist Security Info=False;User ID=" + $UserId + ";Password=" + $Password + ";MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
@@ -159,7 +159,7 @@ $sql = "DECLARE @data_key		VARCHAR(100)
 #**************************************************************************************************
 #Create the connection to the proper server
 $log_connection = New-Object System.Data.SqlClient.SqlConnection
-$log_connection.ConnectionString = "Server=" + $Server + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+$log_connection.ConnectionString = "Server=" + $Server + ";Database=QA;User ID=user;Password=password"
 $log_connection.Open()
 
 $type_command = New-Object System.Data.SqlClient.SqlCommand

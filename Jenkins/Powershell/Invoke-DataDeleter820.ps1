@@ -88,7 +88,7 @@ if ($action -ne "List Files")
     {
 
         $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $SQLConnection.Open()
   
         $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -117,7 +117,7 @@ if ($action -ne "List Files")
     try
     {
         $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $SQLConnection.Open()
 
         $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -173,7 +173,7 @@ if ($action -eq "List Files")
     try
     {
         $FilesConnection = New-Object System.Data.SqlClient.SqlConnection
-        $FilesConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $FilesConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $FilesConnection.Open()
 
         $FilesCommand = New-Object System.Data.SqlClient.SqlCommand

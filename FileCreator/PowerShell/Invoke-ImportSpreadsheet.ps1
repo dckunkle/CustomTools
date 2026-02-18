@@ -135,7 +135,7 @@ catch
 #**************************************************************************************************
 try
 {
-    $connection_string = "Server=$Server;Database=$Database;User ID=batch;Password=B@7c`$J08s"
+    $connection_string = "Server=$Server;Database=$Database;User ID=user;Password=password"
 
     $core_connection = New-Object System.Data.SqlClient.SqlConnection
     $core_connection.ConnectionString = $connection_string

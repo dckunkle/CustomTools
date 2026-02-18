@@ -33,7 +33,7 @@ Param(
     [string]$ConnectionString
 )
 
-$ConnectionString = "Server=tcp:ine1qa-csss-001.database.windows.net,1433;Initial Catalog=assd-auto-001;Persist Security Info=False;User ID=as_readwrite_user;Password=eyesWJd0enVnX2P6bYn1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+$ConnectionString = "Server=tcp:ine1qa-csss-001.database.windows.net,1433;Initial Catalog=assd-auto-001;Persist Security Info=False;User ID=user;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 
 #**************************************************************************************************
 # Set the SQL commands to be executed

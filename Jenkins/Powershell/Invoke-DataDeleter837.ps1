@@ -87,7 +87,7 @@ if ($action -eq 'EOC Delete Data')
     try
     {
         $EOCConnection = New-Object System.Data.SqlClient.SqlConnection
-        $EOCConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $EOCConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $EOCConnection.Open()
 
         $EOCCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -125,7 +125,7 @@ if (($action -ne "List Files") -and ($eoc_records -eq "No"))
     {
 
         $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $SQLConnection.Open()
   
         $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -154,7 +154,7 @@ if (($action -ne "List Files") -and ($eoc_records -eq "No"))
     try
     {
         $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $SQLConnection.Open()
 
         $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -210,7 +210,7 @@ if ($action -eq "List Files")
     try
     {
         $FilesConnection = New-Object System.Data.SqlClient.SqlConnection
-        $FilesConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $FilesConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $FilesConnection.Open()
 
         $FilesCommand = New-Object System.Data.SqlClient.SqlCommand

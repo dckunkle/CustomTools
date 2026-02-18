@@ -32,7 +32,7 @@ $logging_server = "wqadbhpauto01"
 
 #Create the connection to the proper server
 $FileCreatorLogConnection = New-Object System.Data.SqlClient.SqlConnection
-$FileCreatorLogConnection.ConnectionString = "Server=" + $logging_server + ";Database=CoreFileCreator;User ID=CoreAutoLink;Password=c0r3l1nk!"
+$FileCreatorLogConnection.ConnectionString = "Server=" + $logging_server + ";Database=CoreFileCreator;User ID=user;Password=password"
 
 $FileCreatorLogCommand = New-Object System.Data.SqlClient.SqlCommand
 $FileCreatorLogCommand.Connection = $FileCreatorLogConnection

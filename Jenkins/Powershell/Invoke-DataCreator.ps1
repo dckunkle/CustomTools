@@ -77,7 +77,7 @@ try
 
     $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
     #$SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;Trusted_Connection=True;"
-    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $SQLConnection.Open()
   
     $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -107,7 +107,7 @@ try
 {
     $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
     #$SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;Trusted_Connection=True;"
-    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $SQLConnection.Open()
 
     $SQLCommand = New-Object System.Data.SqlClient.SqlCommand

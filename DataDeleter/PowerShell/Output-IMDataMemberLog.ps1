@@ -46,7 +46,7 @@ $total_records = 0
 
 #Create the connection to the proper server
 $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-$SQLConnection.ConnectionString = "Server=" + $Server + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+$SQLConnection.ConnectionString = "Server=" + $Server + ";Database=QA;User ID=user;Password=password"
 
 $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
 $SQLCommand.Connection = $SQLConnection

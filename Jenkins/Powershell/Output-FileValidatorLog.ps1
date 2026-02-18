@@ -24,7 +24,7 @@ Param(
 
 #Create the connection to the proper server
 $TestCaseConnection = New-Object System.Data.SqlClient.SqlConnection
-$TestCaseConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+$TestCaseConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
 
 $TestCaseCommand = New-Object System.Data.SqlClient.SqlCommand
 $TestCaseCommand.Connection = $TestCaseConnection
@@ -105,7 +105,7 @@ try
 
         #Open a reader for the validation details
         $ValidationConnection = New-Object System.Data.SqlClient.SqlConnection
-        $ValidationConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $ValidationConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $ValidationConnection.Open()
 
         $ValidationCommand = New-Object System.Data.SqlClient.SqlCommand

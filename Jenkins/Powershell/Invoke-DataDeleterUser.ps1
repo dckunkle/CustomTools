@@ -72,7 +72,7 @@ try
 {
 
     $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=iis_user;Password=Webuser06"
+    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $SQLConnection.Open()
   
     $SQLCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -101,7 +101,7 @@ catch
 try
 {
     $SQLConnection = New-Object System.Data.SqlClient.SqlConnection
-    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $SQLConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $SQLConnection.Open()
 
     $SQLCommand = New-Object System.Data.SqlClient.SqlCommand

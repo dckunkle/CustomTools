@@ -69,7 +69,7 @@ Param(
     [string]$StorageKey
 )
 
-$connection_string = "DefaultEndpointsProtocol=https;AccountName=hpsqaidmstoragetrans02;AccountKey=/iYUOLgwwAzLbglBTpILMLhZa7N3OVeyh6s3ZpQrxUZJimjfNizDFN6Qj+pHUrN5xycQCP3vs417H9w3qSIzxA==;EndpointSuffix=core.windows.net"
+$connection_string = "DefaultEndpointsProtocol=https;"
 
 #**************************************************************************************************
 # Create connection object to the File Creator database

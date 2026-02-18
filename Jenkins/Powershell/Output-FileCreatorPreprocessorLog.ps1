@@ -28,7 +28,7 @@ $detail_records = $false
 
 #Create the connection to the proper server
 $PreprocessorMethodConnection = New-Object System.Data.SqlClient.SqlConnection
-$PreprocessorMethodConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+$PreprocessorMethodConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
 
 $PreprocessorMethodCommand = New-Object System.Data.SqlClient.SqlCommand
 $PreprocessorMethodCommand.Connection = $PreprocessorMethodConnection
@@ -74,7 +74,7 @@ try
         }
 
         $PreprocessorMethodDetailConnection = New-Object System.Data.SqlClient.SqlConnection
-        $PreprocessorMethodDetailConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $PreprocessorMethodDetailConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $PreprocessorMethodDetailConnection.Open()
 
         $PreprocessorMethodDetailCommand = New-Object System.Data.SqlClient.SqlCommand

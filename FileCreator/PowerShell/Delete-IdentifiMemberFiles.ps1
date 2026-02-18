@@ -58,7 +58,7 @@
 
 
     EXAMPLE
-    .\Delete-IdentifiMemberFiles.ps1 -Server "ipe1qa-hpss-001.database.windows.net" -LogServer "aldqrdb09" -Filename "CMT_MemDemoD_%" -ClientKey "10609" -Database "mdsd-auto-001" -UserId "md_readwrite_user" -Password "QcjoFfdtimmKHP4by4HQ" -TypeId 80
+    .\Delete-IdentifiMemberFiles.ps1 -Server "ipe1qa-hpss-001.database.windows.net" -LogServer "aldqrdb09" -Filename "CMT_MemDemoD_%" -ClientKey "10609" -Database "mdsd-auto-001" -UserId "user" -Password "password" -TypeId 80
 
 
 

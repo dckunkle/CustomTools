@@ -47,7 +47,7 @@
         Specify the password for connecting to the database
 
     EXAMPLE
-    .\Delete-IMDataMember.ps1 -Server "aldqrdb09" -MemberId "EB-2500%" -ClientKey "10609" -Database "mdsd-auto-001" -UserId "md_readwrite_user" -Password "QcjoFfdtimmKHP4by4HQ" -LogId "100" 
+    .\Delete-IMDataMember.ps1 -Server "aldqrdb09" -MemberId "EB-2500%" -ClientKey "10609" -Database "mdsd-auto-001" -UserId "user_id" -Password "password" -LogId "100" 
 
 
 #>

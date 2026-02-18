@@ -85,7 +85,7 @@ try
 
     $PreprocessorConnection = New-Object System.Data.SqlClient.SqlConnection
     #$PreprocessorConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;Trusted_Connection=True;"
-    $PreprocessorConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $PreprocessorConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $PreprocessorConnection.Open()
   
     $PreprocessorCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -114,7 +114,7 @@ catch
 try
 {
     $PreprocessorLogConnection = New-Object System.Data.SqlClient.SqlConnection
-    $PreprocessorLogConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $PreprocessorLogConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $PreprocessorLogConnection.Open()
 
     $PreprocessorLogCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -179,7 +179,7 @@ try
 {
 
     $FileCreatorConnection = New-Object System.Data.SqlClient.SqlConnection
-    $FileCreatorConnection.ConnectionString = "Server=" + $logging_server + ";Database=CoreFileCreator;User ID=CoreAutoLink;Password=c0r3l1nk!"
+    $FileCreatorConnection.ConnectionString = "Server=" + $logging_server + ";Database=CoreFileCreator;User ID=user;Password=password"
     $FileCreatorConnection.Open()
   
     $FileCreatorCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -208,7 +208,7 @@ catch
 try
 {
     $FileCreatorLogConnection = New-Object System.Data.SqlClient.SqlConnection
-    $FileCreatorLogConnection.ConnectionString = "Server=" + $logging_server + ";Database=CoreFileCreator;User ID=CoreAutoLink;Password=c0r3l1nk!"
+    $FileCreatorLogConnection.ConnectionString = "Server=" + $logging_server + ";Database=CoreFileCreator;User ID=user;Password=password"
     $FileCreatorLogConnection.Open()
 
     $FileCreatorLogCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -272,7 +272,7 @@ try
 {
 
     $DataDeleterConnection = New-Object System.Data.SqlClient.SqlConnection
-    $DataDeleterConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $DataDeleterConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $DataDeleterConnection.Open()
   
     $DataDeleterCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -301,7 +301,7 @@ catch
 try
 {
     $DataDeleterLogConnection = New-Object System.Data.SqlClient.SqlConnection
-    $DataDeleterLogConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $DataDeleterLogConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $DataDeleterLogConnection.Open()
 
     $DataDeleterLogCommand = New-Object System.Data.SqlClient.SqlCommand
@@ -334,7 +334,7 @@ try
 {
 
     $PostProcessorConnection = New-Object System.Data.SqlClient.SqlConnection
-    $PostProcessorConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $PostProcessorConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
     $PostProcessorConnection.Open()
   
     $PostProcessorCommand = New-Object System.Data.SqlClient.SqlCommand

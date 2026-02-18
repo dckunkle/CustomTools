@@ -27,7 +27,7 @@ $type_records = $false
 
 #Create the connection to the proper server
 $TypeConnection = New-Object System.Data.SqlClient.SqlConnection
-$TypeConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+$TypeConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
 
 $TypeCommand = New-Object System.Data.SqlClient.SqlCommand
 $TypeCommand.Connection = $TypeConnection
@@ -76,7 +76,7 @@ try
         
         #Open a reader for the validation details
         $TypeDetailConnection = New-Object System.Data.SqlClient.SqlConnection
-        $TypeDetailConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+        $TypeDetailConnection.ConnectionString = "Server=" + $server_name + ";Database=QA;User ID=user;Password=password"
         $TypeDetailConnection.Open()
 
         $TypeDetailCommand = New-Object System.Data.SqlClient.SqlCommand

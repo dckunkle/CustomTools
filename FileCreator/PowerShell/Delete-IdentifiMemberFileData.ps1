@@ -58,7 +58,7 @@
 
 
     EXAMPLE
-    .\Delete-IdentifiMemberFileData.ps1" -Filename "CMT_MemDemoD_20230101.txt" -ClientKey "10609" -Database "mdsd-auto-001" -UserId "md_readwrite_user" -Password "QcjoFfdtimmKHP4by4HQ" -LogId "0" 
+    .\Delete-IdentifiMemberFileData.ps1" -Filename "CMT_MemDemoD_20230101.txt" -ClientKey "10609" -Database "mdsd-auto-001" -UserId "user" -Password "password" -LogId "0" 
 
 
 #>
@@ -263,7 +263,7 @@ try
 # Log results of the delete
 #**************************************************************************************************
     $log_connection = New-Object System.Data.SqlClient.SqlConnection
-    $log_connection.ConnectionString = "Server=" + $log_server + ";Database=QA;User ID=batch;Password=B@7c`$J08s"
+    $log_connection.ConnectionString = "Server=" + $log_server + ";Database=QA;User ID=user;Password=password"
     $log_connection.Open()
 
     
