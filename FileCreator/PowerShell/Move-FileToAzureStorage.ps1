@@ -42,6 +42,12 @@
         Specifies the key used for the storage account
 
     EXAMPLE
+
+    .\Move-FileToAzureStorage.ps1 -Filename C:\Azure\CMT_MemDemoD_20230101.txt -Container data-sources -Blob DEMOGRAPHICS/IB/COREQR09/CMT/Staging/CMT_MemDemoD_20230101.txt -StorageAccount acct -StorageKey key
+    .\Move-FileToAzureStorage.ps1 -Filename C:\Azure\CMT_MemDemoD_20230101.txt -Container data-sources -Blob DEMOGRAPHICS/IB/COREQR09/CMT/Staging/CMT_MemDemoD_20230101.txt -StorageAccount acct -StorageKey key
+    .\Move-FileToAzureStorage.ps1 -Filename C:\Azure\FC_RiskScores_20230414.txt -Container data-sources -Blob RiskScores/COREQR09/Staging/FC_RiskScores_20230414.txt -StorageAccount acct -StorageKey key
+    .\Move-FileToAzureStorage.ps1 -Filename C:\Azure\FC_834_EB_IdentifiMember_UpdateDetails_20230519.edi -Container data-sources -Blob 834/IB/COREQR09/Staging/FC_834_EB_IdentifiMember_UpdateDetails_20230519.edi -StorageAccount acct -StorageKey key
+ 
 #>
 
 [CmdletBinding()]
