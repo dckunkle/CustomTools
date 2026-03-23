@@ -1,4 +1,6 @@
 # CustomTools
+The following custom tools were configured to run from Jenkins using PowerShell.
+
 ## Data Creator
 The Data Creator tool creates configuration data by directly calling stored procedures within the database layer. The tool allows user to build significant amounts of test data in a quick and repeatable way.
 ## File Creator
